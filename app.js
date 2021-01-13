@@ -144,9 +144,9 @@ function appMenu(){
                 name: "engineerEmail",
                 message:"Please enter the engineer's email.",
                 validate: answer => {
-                    const pass = answers.match(
-                        /\S+@\S+\.\S+/
-                    )
+                    const pass = answer.match(
+                      /\S+@\S+\.\S+/
+                    );
                     if (pass){
                         return true;
                     }
